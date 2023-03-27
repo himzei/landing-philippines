@@ -40,7 +40,12 @@ export default function MainSlide() {
         // display={"flex"}
         // justifyContent="flex-start"
       >
-        <VStack spacing={0} w="full" alignItems={"flex-start"} px="8">
+        <VStack
+          spacing={{ sm: "4", lg: "0" }}
+          w="full"
+          alignItems={"flex-start"}
+          px="8"
+        >
           <Text
             w="full"
             fontSize={{

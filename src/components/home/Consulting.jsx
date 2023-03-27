@@ -74,7 +74,7 @@ export default function Consulting() {
 
   return (
     <VStack w="full" alignItems={"center"} spacing="16" py="32">
-      <Box w="7xl" h="300px" position="relative">
+      <Box w={{ sm: "full", lg: "7xl" }} h="300px" position="relative">
         <Image
           w="full"
           h="300px"
@@ -105,7 +105,7 @@ export default function Consulting() {
           </Text>
         </VStack>
       </Box>
-      <VStack as="form" w="md" spacing={8} onSubmit={handleSubmit(onSubmit)}>
+      <VStack as="form" w="sm" spacing={8} onSubmit={handleSubmit(onSubmit)}>
         <FormControl isRequired>
           <FormLabel>이름</FormLabel>
           <InputGroup>

@@ -33,7 +33,7 @@ export default function About() {
           h="full"
           display={"flex"}
           alignItems="center"
-          px={{ sm: "4", lg: "0" }}
+          px={{ sm: "8", lg: "0" }}
         >
           <VStack
             alignItems={"flex-start"}

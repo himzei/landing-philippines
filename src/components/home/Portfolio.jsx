@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <VStack w="full" alignItems={"center"} py="32">
       <VStack
-        w={{ sm: "lg", md: "3xl", lg: "7xl" }}
+        w={{ sm: "sm", md: "3xl", lg: "7xl" }}
         alignItems={"flex-start"}
         spacing="8"
       >

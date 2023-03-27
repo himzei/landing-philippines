@@ -10,7 +10,7 @@ export default function CurriculumItem({
   times,
 }) {
   return (
-    <Box w="400px" cursor="pointer" mx="auto">
+    <Box w={{ sm: "320px", md: "400px" }} cursor="pointer" mx="auto">
       <VStack w="full" role="group" spacing="0">
         <Box
           w="400px"
