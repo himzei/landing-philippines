@@ -29,7 +29,7 @@ export default function MainSlide() {
         left="50%"
         transform={"translate(-50%, -50%)"}
         w={{
-          sm: "lg",
+          sm: "sm",
           md: "3xl",
           lg: "5xl",
           xl: "7xl",

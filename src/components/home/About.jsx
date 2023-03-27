@@ -13,7 +13,7 @@ export default function About() {
           <VStack spacing={0}>
             <Text
               fontWeight={900}
-              fontSize={{ sm: "320", lg: "480" }}
+              fontSize={{ sm: "300", lg: "460" }}
               my={{ sm: "-20", lg: "-40" }}
               bgImage={
                 "url(https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)"
@@ -24,7 +24,7 @@ export default function About() {
             >
               14
             </Text>
-            <Text fontWeight={600} fontSize={20}>
+            <Text fontWeight={600} fontSize={20} px={{ sm: "4", lg: "8" }}>
               Years Of Experience With Creative Team
             </Text>
           </VStack>
@@ -45,8 +45,8 @@ export default function About() {
               <Text fontSize="20">14년의 노하우와 경험</Text>
               <Text
                 fontWeight={900}
-                fontSize={48}
-                lineHeight={"56px"}
+                fontSize={{ sm: "36", lg: "48" }}
+                lineHeight={{ sm: "48px", lg: "56px" }}
                 letterSpacing={-1}
               >
                 고객이 원하는 것은
@@ -54,7 +54,7 @@ export default function About() {
               </Text>
             </VStack>
             <Box borderLeft="4px" borderColor="red.500" px="4" py="2">
-              <Text fontWeight={600} fontSize="20">
+              <Text fontWeight={600} fontSize={{ sm: "16", lg: "20" }}>
                 아이원은 수년간의 경험과 노하우로 안정된 필리핀 유학경험과
                 고객중심의 서비스로 진행할 것을 약속드립니다.
               </Text>

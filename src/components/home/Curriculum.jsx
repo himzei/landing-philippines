@@ -29,16 +29,20 @@ export default function Curriculum() {
       />
       <VStack w="full" alignItems="center" px={4} spacing="16" zIndex={9}>
         <VStack alignItems="center" spacing="0" w="full">
-          <Text color="white" fontSize={20}>
+          <Text color="white" fontSize={20} px="4" align="center">
             부모동반 어학연수 커리큘럼을 알려드립니다.
           </Text>
-          <HStack fontSize="48">
+          <HStack fontSize={{ sm: "36", lg: "48" }}>
             <Text as="span" fontWeight={900} color="white">
               커리큘럼
             </Text>
           </HStack>
         </VStack>
-        <Grid w="4xl" templateColumns={"repeat(2, 1fr)"} rowGap="10">
+        <Grid
+          w="4xl"
+          templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+          rowGap="10"
+        >
           <CurriculumItem
             title="1대1 수업"
             content1="- W!SE Method®에 따라 레벨에 맞춰 전과목 연결강의"
@@ -60,7 +64,7 @@ export default function Curriculum() {
             content1="- 경력이 다양한 교사들과 6명 소그룹으로 재미있게"
             content2="- 디지털 아트/영상편집/베이킹 Learn to Learn 수업"
             content3="- 수능/디베이트/한국내신/텝스/작문 강의도 진행"
-            times="신청"
+            times="추가신청"
             imageUrl={Curri3}
           />
           <CurriculumItem
@@ -68,7 +72,7 @@ export default function Curriculum() {
             content1="- 전문 수학강사가 선행학습 지도"
             content2="- 학년 별 소그룹 수업 진행"
             content3="- 35-50만원으로 일대일 수업 진행가능"
-            times="신청"
+            times="추가신청"
             imageUrl={Curri4}
           />
         </Grid>

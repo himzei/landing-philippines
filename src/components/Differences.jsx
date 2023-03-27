@@ -13,16 +13,24 @@ export default function Differences() {
         <Box w="full" h="full" position="absolute" top="0" left="0">
           <Image
             w="full"
+            h="full"
             objectFit="cover"
             objectPosition="center"
             opacity="0.5"
             src="https://images.unsplash.com/photo-1678272523210-e6e4e519427b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1639&q=80"
           />
         </Box>
-        <VStack w="4xl" py="32" spacing="16" zIndex={99}>
+        <VStack
+          w={{ sm: "sm", md: "lg", lg: "xl" }}
+          py="32"
+          spacing="16"
+          zIndex={99}
+        >
           <VStack spacing="0">
-            <Text fontSize="20">꼼꼼하게 보는 필리핀 부모동반 바른연수</Text>
-            <Text fontWeight={900} fontSize="48">
+            <Text fontSize={{ sm: "16", md: "20" }}>
+              꼼꼼하게 보는 필리핀 부모동반 바른연수
+            </Text>
+            <Text fontWeight={900} fontSize={{ sm: "36", md: "48" }}>
               이런점이 달라요!
             </Text>
           </VStack>

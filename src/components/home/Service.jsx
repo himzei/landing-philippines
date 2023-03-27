@@ -24,8 +24,8 @@ export default function Service() {
             spacing="0"
             w="full"
           >
-            <Text fontSize={20}>4가지 강점이 있어요</Text>
-            <HStack fontSize="48">
+            <Text fontSize={{ sm: "16", md: "20" }}>4가지 강점이 있어요</Text>
+            <HStack fontSize={{ sm: "24", md: "48" }}>
               <Text as="span">부모동반 어학연수</Text>
               <Text as="span" fontWeight={900} color="red.500">
                 강점
@@ -33,7 +33,11 @@ export default function Service() {
             </HStack>
           </VStack>
           <Grid
-            templateColumns={{ sm: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            templateColumns={{
+              sm: "repeat(1, 1fr)",
+              md: "repeat(2, 1fr)",
+              lg: "repeat(4, 1fr)",
+            }}
             gap="6"
             w="full"
           >

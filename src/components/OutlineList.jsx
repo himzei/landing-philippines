@@ -14,20 +14,20 @@ export default function OutlineList({
       w="full"
       align="center"
       py="4"
-      templateColumns={"1fr 3fr 1fr"}
+      templateColumns={{ sm: "repeat(1, 1fr)", md: "1fr 3fr 1fr" }}
       fontSize="20"
       borderBottom="1px"
       borderLeft="1px"
       borderRight="1px"
       borderColor="gray.100"
       role="group"
-      _hover={{ background: "red.500", fontWeight: "600", color: "white" }}
+      _hover={{ background: "red.500", color: "white" }}
     >
       <GridItem>
-        <Text>{title}</Text>
+        <Text fontWeight={900}>{title}</Text>
       </GridItem>
       <GridItem>
-        <Text>{content}</Text>
+        <Text px="4">{content}</Text>
       </GridItem>
       <GridItem>
         <Text>{etc}</Text>

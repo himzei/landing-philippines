@@ -4,8 +4,8 @@ import OutlineList from "./OutlineList";
 export default function Outline() {
   return (
     <VStack w="full" alignItems="center" py="32">
-      <VStack w="7xl" spacing="8">
-        <HStack fontSize="48">
+      <VStack w={{ sm: "sm", lg: "7xl" }} spacing="8">
+        <HStack fontSize={{ sm: "30", lg: "48" }}>
           <Text as="span">부모동반 어학연수</Text>
           <Text as="span" color="red.500" fontWeight={900}>
             개요
@@ -18,7 +18,7 @@ export default function Outline() {
             w="full"
             align="center"
             py="4"
-            templateColumns={"1fr 3fr 1fr"}
+            templateColumns={{ sm: "none", md: "1fr 3fr 1fr" }}
             fontSize="20"
             fontWeight={600}
           >
