@@ -39,7 +39,7 @@ export default function Curriculum() {
           </HStack>
         </VStack>
         <Grid
-          w="4xl"
+          w={{ sm: "sm", lg: "4xl" }}
           templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
           rowGap="10"
         >
