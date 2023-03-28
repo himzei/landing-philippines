@@ -90,6 +90,21 @@ export default function Portfolio() {
     Foods21,
   ];
 
+  const Contents = {
+    foods: [
+      "싱싱안심 원장 가족이 먹는 식사 그대로, 매일 새로 조리한 음식이 제공됩니다.",
+      "입맛보장 한국에서 한식당 주방장 경력 15년의 원장 어머니가 직접 식사를 책임집니다.",
+      "고기고기 모든 끼니에 (돼지고기=소고기>닭고기>생선,아침=두부/계란)이 꼭 포함됩니다.",
+      "우리집밥 친정 어머니가 해주던 집밥, 아이가 좋아하는 반찬을 해외에서 집처럼 즐기세요. ",
+    ],
+    accomos: [
+      "모두 가깝습니다. 도보로 학원2-5분, 골프연습장3-6분, 쇼핑몰4-8분, 은행 2-5분",
+      "속이 시원합니다. 온수기/에어컨 자유로운 사용 [팡팡 쓰고 외출할 때만 꺼주세요]",
+      "맘이 편안합니다. 남녀외국 학생들로 어수선한 학원 기숙사 아닌, 안정감 있는 주거단지",
+      "안전 그리고 안전. 슬럼없는 지역에 메인게이트-로비까지 출입 허가자만 통과가능",
+    ],
+  };
+
   return (
     <VStack w="full" alignItems={"center"} py="32">
       <VStack
@@ -99,18 +114,18 @@ export default function Portfolio() {
       >
         <PortfolioItem
           imgUrl={Accomo}
-          title="숙소특징"
-          period="2023.1.30~2023.2.1"
-          company="주식회사 네이버"
-          contents="주식회사 날라에서 의뢰해주신 물류대행 업체 소개 원페이지 사이트입니다. 본 페이지의 최종 목표는 물류대행 서비스 문의입니다. 원페이지 사이트는 간결하면서도 깔끔하게 의도하는 바를 고객에게 분명히 전달할 수 있어야 합니다. 스크롤을 따라 움직이는 트럭 인터랙션 효과가 특징입니다."
+          title="숙소정보"
+          period="필리핀 마닐라"
+          company="-"
+          contents={Contents.accomos}
         />
         <Box w="full" h="1px" bg="gray.100" />
         <PortfolioItem
           imgUrl={Foods}
-          title="랜딩페이지 제작서비스"
-          period="2023.1.30~2023.2.1"
-          company="주식회사 네이버"
-          contents="안전도어 시공사 우즈에어 안전도어 업체소개 반응형 홈페이지입니다. 메인페이지 포함 총 17페이지로 구성되었으며, 회사소개, 연혁, 제품소개, 게시판, 고객문의 등 다양한 기능들이 포함되어 있습니다."
+          title="식사정보"
+          period="필리핀 마닐라"
+          company="-"
+          contents={Contents.foods}
         />
         <Box w="full" h="1px" bg="gray.100" />
         <PortfolioThree

@@ -31,7 +31,7 @@ export default function PortfolioItem({
     <Box w={"full"}>
       <Grid
         templateColumns={{ sm: "repeat(1, 1fr)", lg: "3fr 4fr" }}
-        rowGap="8"
+        rowGap="0"
       >
         <GridItem align="center">
           <Box w={{ sm: "360px", md: "400px" }} h="260px">
@@ -40,7 +40,7 @@ export default function PortfolioItem({
                 <Box
                   key={index}
                   w={{ sm: "360px", lg: "400px" }}
-                  h="240px"
+                  h="265px"
                   rounded="lg"
                   overflow="hidden"
                 >
@@ -74,11 +74,13 @@ export default function PortfolioItem({
                 w="full"
                 justifyContent={"space-between"}
               >
-                <Text>개발기간 | {period}</Text>
-                <Text>고객사명 | {company}</Text>
+                <Text>{period}</Text>
+                <Text>{company}</Text>
               </HStack>
               <Box px="4">
-                <Text>{contents}</Text>
+                {contents.map((item, index) => (
+                  <Text key={index}>{item}</Text>
+                ))}
               </Box>
             </VStack>
             <HStack>
