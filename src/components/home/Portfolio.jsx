@@ -30,8 +30,21 @@ import Foods18 from "../../assets/jpg/foods/18.jpg";
 import Foods19 from "../../assets/jpg/foods/19.jpg";
 import Foods20 from "../../assets/jpg/foods/20.jpg";
 import Foods21 from "../../assets/jpg/foods/21.jpg";
+import PortfolioThree from "../PortfoloiThree";
+
+import Trip01_1 from "../../assets/jpg/trip/01/1.jpg";
+import Trip01_2 from "../../assets/jpg/trip/01/2.jpg";
+import Trip01_3 from "../../assets/jpg/trip/01/3.jpg";
+import Trip01_4 from "../../assets/jpg/trip/01/4.jpg";
+
+import Trip02_1 from "../../assets/jpg/trip/02/1.jpg";
+import Trip02_2 from "../../assets/jpg/trip/02/2.jpg";
+import Trip02_3 from "../../assets/jpg/trip/02/3.jpg";
+import Trip02_4 from "../../assets/jpg/trip/02/4.jpg";
 
 export default function Portfolio() {
+  const Trip02 = [Trip02_1, Trip02_2, Trip02_3, Trip02_4];
+  const Trip01 = [Trip01_1, Trip01_2, Trip01_3, Trip01_4];
   const Accomo = [
     Accomo1,
     Accomo2,
@@ -64,6 +77,7 @@ export default function Portfolio() {
     Foods20,
     Foods21,
   ];
+
   return (
     <VStack w="full" alignItems={"center"} py="32">
       <VStack
@@ -87,13 +101,14 @@ export default function Portfolio() {
           contents="안전도어 시공사 우즈에어 안전도어 업체소개 반응형 홈페이지입니다. 메인페이지 포함 총 17페이지로 구성되었으며, 회사소개, 연혁, 제품소개, 게시판, 고객문의 등 다양한 기능들이 포함되어 있습니다."
         />
         <Box w="full" h="1px" bg="gray.100" />
-        {/* <PortfolioItem
-          imgUrl="https://images.unsplash.com/photo-1674574124792-3be232f1957f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-          title="랜딩페이지 제작서비스"
-          period="2023.1.30~2023.2.1"
-          company="주식회사 네이버"
-          contents="안전도어 시공사 우즈에어 안전도어 업체소개 반응형 홈페이지입니다. 메인페이지 포함 총 17페이지로 구성되었으며, 회사소개, 연혁, 제품소개, 게시판, 고객문의 등 다양한 기능들이 포함되어 있습니다."
-        /> */}
+        <PortfolioThree
+          imgUrl={Trip01}
+          title="Enchanted Kingdom 필리핀 최대 실내 놀이공원"
+        />
+        <PortfolioThree
+          imgUrl={Trip02}
+          title="Dream Play 세계적인 영화사 드림웍스가 운영하는 체험형 어린이 테마파크"
+        />
       </VStack>
     </VStack>
   );
