@@ -16,6 +16,7 @@ export async function handleConsulting({
 }) {
   return await fetch(`${BASE_PATH}/consulting/write`, {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },

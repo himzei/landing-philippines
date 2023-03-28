@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/api/*"
-to = "https://port-0-landing-iwon-backend-by52fb24lbbufx8n.gksl2.cloudtype.app/api/v1:splat"
+to = "https://port-0-landing-iwon-backend-by52fb24lbbufx8n.gksl2.cloudtype.app/:splat"
 status = 200
 force = true 
 
