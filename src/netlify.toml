@@ -1,6 +1,0 @@
-[[redirects]]
-	from = "/api/*"
-	to = "https://port-0-landing-iwon-backend-by52fb24lbbufx8n.gksl2.cloudtype.app"
-	status = 200
-	force = true 
-	headers = {X-From = "Netlify"}
