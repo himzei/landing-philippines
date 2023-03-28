@@ -105,7 +105,13 @@ export default function Consulting() {
           </Text>
         </VStack>
       </Box>
-      <VStack as="form" w="sm" spacing={8} onSubmit={handleSubmit(onSubmit)}>
+      <VStack
+        as="form"
+        w="sm"
+        spacing={8}
+        onSubmit={handleSubmit(onSubmit)}
+        px="4"
+      >
         <FormControl isRequired>
           <FormLabel>이름</FormLabel>
           <InputGroup>
