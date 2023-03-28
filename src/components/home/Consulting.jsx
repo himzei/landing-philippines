@@ -73,7 +73,7 @@ export default function Consulting() {
   };
 
   return (
-    <VStack w="full" alignItems={"center"} spacing="16" py="32">
+    <VStack w="full" alignItems={"center"} spacing="16" py="16" px="4">
       <Box w={{ sm: "full", lg: "7xl" }} h="300px" position="relative">
         <Image
           w="full"

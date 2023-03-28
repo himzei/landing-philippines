@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Box,
   Grid,
@@ -8,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import ButtonSlide from "./ButtonSlide";
+import Slider from "react-slick";
 
 export default function PortfolioItem({
   imgUrl,
@@ -16,23 +19,45 @@ export default function PortfolioItem({
   company,
   contents,
 }) {
+  const settings = {
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+  };
   return (
     <Box w={"full"}>
-      <Grid templateColumns={{ sm: "repeat(1, 1fr)", lg: "3fr 4fr" }} gap={8}>
-        <GridItem w="full" h="340px">
-          <Box w="full" h="full" rounded="lg" overflow={"hidden"}>
-            <Image
-              objectFit={"cover"}
-              objectPosition="center"
-              w="full"
-              h="full"
-              src={imgUrl}
-            />
+      <Grid
+        templateColumns={{ sm: "repeat(1, 1fr)", lg: "3fr 4fr" }}
+        rowGap="8"
+      >
+        <GridItem align="center">
+          <Box w={{ sm: "360px", md: "400px" }} h="260px">
+            <Slider {...settings}>
+              {imgUrl?.map((item, index) => (
+                <Box
+                  key={index}
+                  w={{ sm: "360px", lg: "400px" }}
+                  h="240px"
+                  rounded="lg"
+                  overflow="hidden"
+                >
+                  <Image
+                    w="full"
+                    objectFit="cover"
+                    objectPosition="center center"
+                    src={item}
+                  />
+                </Box>
+              ))}
+            </Slider>
           </Box>
         </GridItem>
-        <GridItem w="full" py={8} px={4} h="340px">
+
+        <GridItem>
           <VStack
-            w="full"
             h="full"
             alignItems={"flex-start"}
             justifyContent="space-between"
