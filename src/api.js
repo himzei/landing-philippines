@@ -1,4 +1,5 @@
-const BASE_PATH = "http://localhost:4000/api/v1";
+const BASE_PATH =
+  "https://port-0-landing-iwon-backend-by52fb24lbbufx8n.gksl2.cloudtype.app/api/v1";
 
 export async function consultingList() {
   return await fetch(`${BASE_PATH}/consulting`).then((response) =>
@@ -19,6 +20,7 @@ export async function handleConsulting({
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
+      type: "아이비 부모동반 어학연수",
       name,
       email,
       tel,
