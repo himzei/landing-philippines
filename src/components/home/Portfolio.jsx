@@ -42,7 +42,19 @@ import Trip02_2 from "../../assets/jpg/trip/02/2.jpg";
 import Trip02_3 from "../../assets/jpg/trip/02/3.jpg";
 import Trip02_4 from "../../assets/jpg/trip/02/4.jpg";
 
+import Trip03_1 from "../../assets/jpg/trip/03/1.jpg";
+import Trip03_2 from "../../assets/jpg/trip/03/2.jpg";
+import Trip03_3 from "../../assets/jpg/trip/03/3.jpg";
+import Trip03_4 from "../../assets/jpg/trip/03/4.jpg";
+
+import Trip04_1 from "../../assets/jpg/trip/04/1.jpg";
+import Trip04_2 from "../../assets/jpg/trip/04/2.jpg";
+import Trip04_3 from "../../assets/jpg/trip/04/3.jpg";
+import Trip04_4 from "../../assets/jpg/trip/04/4.jpg";
+
 export default function Portfolio() {
+  const Trip04 = [Trip04_1, Trip04_2, Trip04_3, Trip04_4];
+  const Trip03 = [Trip03_1, Trip03_2, Trip03_3, Trip03_4];
   const Trip02 = [Trip02_1, Trip02_2, Trip02_3, Trip02_4];
   const Trip01 = [Trip01_1, Trip01_2, Trip01_3, Trip01_4];
   const Accomo = [
@@ -108,6 +120,14 @@ export default function Portfolio() {
         <PortfolioThree
           imgUrl={Trip02}
           title="Dream Play 세계적인 영화사 드림웍스가 운영하는 체험형 어린이 테마파크"
+        />
+        <PortfolioThree
+          imgUrl={Trip03}
+          title="Matabungkay Beach Hotel 색다른 해상땟목/스노클링/체험다이빙 가능"
+        />
+        <PortfolioThree
+          imgUrl={Trip04}
+          title="88 Hot Spring Resort '88 온천'  한국인운영 필리핀최대 노천온천  "
         />
       </VStack>
     </VStack>
