@@ -18,7 +18,6 @@ export async function handleConsulting({
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
     },
     body: JSON.stringify({
       type: "아이비 부모동반 어학연수",
