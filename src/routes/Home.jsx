@@ -29,32 +29,36 @@ export default function Home() {
       </div>
 
       {/* 이런점이 달라요 */}
-      <div>
-        <Differences />
+      <div id="3">
+        <Element name="test3" className="test3">
+          <Differences />
+        </Element>
       </div>
 
       {/* 개요 */}
-      <div>
-        <Outline />
+      <div id="4">
+        <Element name="test4" className="test4">
+          <Outline />
+        </Element>
       </div>
 
       {/* Community */}
-      <div id="4">
-        <Element name="test4" className="test4" id="4">
+      <div id="5">
+        <Element name="test5" className="test5">
           <Curriculum />
         </Element>
       </div>
 
       {/* 포트폴리오 */}
-      <div id="3">
-        <Element name="test3" className="test3" id="3">
+      <div id="6">
+        <Element name="test6" className="test6">
           <Portfolio />
         </Element>
       </div>
 
       {/* 컨설팅 */}
-      <div id="six">
-        <Element name="test6" className="test6" id="6">
+      <div id="7">
+        <Element name="test7" className="test7">
           <Consulting />
         </Element>
       </div>

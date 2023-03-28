@@ -28,7 +28,7 @@ export default function Service() {
             <HStack fontSize={{ sm: "24", md: "48" }}>
               <Text as="span">부모동반 어학연수</Text>
               <Text as="span" fontWeight={900} color="red.500">
-                강점
+                장점
               </Text>
             </HStack>
           </VStack>

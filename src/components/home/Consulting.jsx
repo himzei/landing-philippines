@@ -218,9 +218,7 @@ export default function Consulting() {
           justifyContent={"space-between"}
         >
           <Checkbox colorScheme={"red"} {...register("confirm")}>
-            <Text fontSize="14">
-              개인정보취급방침을 읽었으며, 이에 동의합니다.
-            </Text>
+            <Text fontSize="14">개인정보취급방침 동의하기</Text>
           </Checkbox>
 
           <Button size="sm" onClick={onOpen}>

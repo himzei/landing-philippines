@@ -37,11 +37,12 @@ export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const menuList = [
-    { name: "아이원소개", link: "test1", link2: "/#1" },
-    { name: "강점", link: "test2", link2: "/#2" },
-    { name: "포트폴리오", link: "test3", link2: "/#3" },
-    { name: "커뮤니티", link: "test4", link2: "/#4" },
-    { name: "고객센터", link: "test6", link2: "/#6" },
+    { name: "회사소개", link: "test1", link2: "/#1" },
+    { name: "장점", link: "test2", link2: "/#2" },
+    { name: "차별성", link: "test3", link2: "/#3" },
+    { name: "개요", link: "test4", link2: "/#4" },
+    { name: "커리큘럼", link: "test5", link2: "/#5" },
+    { name: "사진", link: "test6", link2: "/#6" },
   ];
   const [scroll, setScroll] = useState(true);
   const { pathname } = useLocation();
@@ -133,10 +134,16 @@ export default function Header() {
               )}
             </HStack>
             <HStack spacing={5}>
-              <Link to="/">
+              <a href="/#7">
                 <Button colorScheme={"red"}>빠른견적 문의</Button>
-              </Link>
-              <Box p="2" cursor={"pointer"} ref={btnRef} onClick={onOpen}>
+              </a>
+              <Box
+                p="2"
+                display="none"
+                cursor={"pointer"}
+                ref={btnRef}
+                onClick={onOpen}
+              >
                 <AiOutlineMenu size="20px" />
               </Box>
             </HStack>
