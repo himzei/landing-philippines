@@ -22,7 +22,7 @@ export async function handleConsulting({
     },
     credentials: "include",
     body: JSON.stringify({
-      type: "아이비 부모동반 어학연수",
+      type: "마닐라 부모동반 어학연수",
       name,
       email,
       tel,

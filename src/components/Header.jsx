@@ -96,7 +96,7 @@ export default function Header() {
         <HStack justifyContent={"space-between"} w="7xl" h="full" px="2">
           <Box h="full" p="4">
             <Link to="/">
-              <Image h="full" src={Logo} />
+              <Image h="70%" src={Logo} />
             </Link>
           </Box>
           <HStack spacing={8} transition="0.4s">
