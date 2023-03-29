@@ -1,5 +1,6 @@
 const BASE_PATH =
   "https://port-0-landing-iwon-backend-by52fb24lbbufx8n.gksl2.cloudtype.app/api/v1";
+// "http://localhost:3000/api/v1";
 
 export async function consultingList() {
   return await fetch(`${BASE_PATH}/consulting`).then((response) =>
@@ -16,10 +17,10 @@ export async function handleConsulting({
 }) {
   return await fetch(`${BASE_PATH}/consulting/write`, {
     method: "POST",
-    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
+    credentials: "include",
     body: JSON.stringify({
       type: "아이비 부모동반 어학연수",
       name,
@@ -37,6 +38,7 @@ export async function usernameSignUp({ username, email, password, password2 }) {
     headers: {
       "Content-Type": "application/json",
     },
+    credentials: "include",
     body: JSON.stringify({
       username,
       email,

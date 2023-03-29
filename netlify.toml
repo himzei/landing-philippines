@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[context.production.environment]
+  TOML_ENV_VAR = "From netlify.toml"
+  REACT_APP_TOML_ENV_VAR = "From netlify.toml (REACT_APP_)"
+
+[redirects]
+	from = "/api/*"
+	to = "https://port-0-landing-iwon-backend-by52fb24lbbufx8n.gksl2.cloudtype.app/:splat"
+	status = 200
+	force = true 
+

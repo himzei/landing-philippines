@@ -24,6 +24,7 @@ import {
   useDisclosure,
   useCheckboxGroup,
   useToast,
+  Spinner,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { AiFillPhone, AiTwotoneMail } from "react-icons/ai";
@@ -57,7 +58,7 @@ export default function Consulting() {
     setChecked([]);
   }, [reset]);
 
-  const mutation = useMutation(handleConsulting, {
+  const { mutate, isLoading } = useMutation(handleConsulting, {
     onSuccess: () => {
       toast({
         title: "작성하신 상담신청을 전달하였습니다.",
@@ -69,7 +70,7 @@ export default function Consulting() {
   });
 
   const onSubmit = ({ name, tel, email, message }) => {
-    mutation.mutate({ name, email, tel, message, category: checked });
+    mutate({ name, email, tel, message, category: checked });
   };
 
   return (
@@ -233,7 +234,7 @@ export default function Consulting() {
             w="full"
             colorScheme={"red"}
           >
-            제출하기
+            {isLoading ? <Spinner /> : "제출하기"}
           </Button>
           {/* <ButtonSlide text="제출하기" buttonFontSize="16" /> */}
         </Box>
