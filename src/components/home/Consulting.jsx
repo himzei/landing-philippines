@@ -140,7 +140,7 @@ export default function Consulting() {
           )}
         </FormControl>
         <FormControl isRequired>
-          <FormLabel>연락처</FormLabel>
+          <FormLabel>휴대폰</FormLabel>
           <InputGroup>
             <InputLeftElement
               pointerEvents="none"
