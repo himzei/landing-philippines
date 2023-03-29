@@ -151,6 +151,10 @@ export default function Consulting() {
               type="tel"
               {...register("tel", {
                 required: "연락처는 필수 입력입니다.",
+                pattern: {
+                  value: /^(01[0]{1})[0-9]{4}[0-9]{4}$/,
+                  message: "잘못된 번호입니다. 휴대폰 번호를 입력해 주세요.",
+                },
               })}
               placeholder="휴대폰 번호를 '-' 없이 입력해 주세요."
             />
